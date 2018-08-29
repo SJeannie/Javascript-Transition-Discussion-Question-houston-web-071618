@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <title>Save Lincoln!</title>
 </head>
-<body>
-    <div id="interval-input">
-      <input id="interval" placeholder="Enter Interval in Milliseconds" style="width: 30vw;"></input>
-      <button id="save_lincoln">Save Lincoln!</button>
-    </div>
-    <div id="images" style="display: block; position: relative;">
-      <img id="background" src="Abraham.png" style="position:absolute; " alt="abraham lincoln">
-      <img id="foreground" src="zombie_abraham.png" style="position:absolute; top: 70px; left: 110px;" alt="zombie abraham lincoln">
-      <div id="hidden-message" style="position: relative; display: none; font-family: Optima, ‘Lucida Grande’;"><h3>...Thank you for saving me, young time traveller...</h3></div>
-    </div>
 
-    <script src="index.js"></script>
+<body>
+  <div id="duration-input">
+    <input id="duration" placeholder="Enter Interval in Milliseconds" style="width: 30vw;"></input>
+    <button id="save_lincoln">Save Lincoln!</button>
+  </div>
+
+  <button id="kill_lincoln">Kill Lincoln!</button>
+
+  <div id="images" style="display: block; position: relative;">
+    <img id="background" src="Abraham.png" style="position:absolute; " alt="abraham lincoln">
+    <img id="foreground" src="zombie_abraham.png" style="position:absolute; top: 70px; left: 110px;" alt="zombie abraham lincoln">
+    <div id="alert" style="position: relative; display: none; font-family: Optima, ‘Lucida Grande’;">
+      <h3>...Thank you for saving me, young time traveller...</h3>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
